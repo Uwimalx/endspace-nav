@@ -1,0 +1,111 @@
+site_name: ENDSPACE_NAV
+author: UWIMALX
+bio: Navigation Terminal
+avatar: /favicon.svg
+since: 2026
+bei_an: ''
+bei_an_link: ''
+
+endspace_loading_cover: true
+endspace_loading_site_name: ENDSPACE_NAV
+endspace_loading_text_init: INITIALIZING
+endspace_loading_text_loading: LOADING
+endspace_loading_text_complete: READY
+endspace_loading_text_sweeping: LAUNCHING
+endspace_loading_text_fadeout: WELCOME
+endspace_loading_image: /favicon.svg
+
+endspace_banner_watermark_text: ENDSPACE_NAV
+
+endspace_nav_panel: true
+endspace_nav_title: ENDSPACE_NAV
+endspace_nav_subtitle: 'NAVIGATION_TERMINAL // INDEX_OF_LINKS'
+endspace_nav_new_tab: true
+endspace_nav_groups:
+  - title: SEARCH
+    links:
+      - name: Google
+        url: https://www.google.com
+        desc: 全球搜索引擎
+      - name: Bing
+        url: https://www.bing.com
+        desc: 微软搜索引擎
+      - name: Baidu
+        url: https://www.baidu.com
+        desc: 百度搜索
+      - name: DuckDuckGo
+        url: https://duckduckgo.com
+        desc: 不追踪你的搜索
+  - title: DEV
+    links:
+      - name: GitHub
+        url: https://github.com
+        desc: 代码托管协作平台
+      - name: Stack Overflow
+        url: https://stackoverflow.com
+        desc: 程序员问答社区
+      - name: MDN Web Docs
+        url: https://developer.mozilla.org
+        desc: Web 开发文档
+      - name: Vercel
+        url: https://vercel.com
+        desc: 前端部署与托管
+      - name: npm
+        url: https://www.npmjs.com
+        desc: Node 包管理仓库
+      - name: Can I Use
+        url: https://caniuse.com
+        desc: 浏览器兼容性查询
+  - title: SOCIAL
+    links:
+      - name: 'Twitter / X'
+        url: https://twitter.com
+        desc: 社交媒体平台
+      - name: YouTube
+        url: https://www.youtube.com
+        desc: 视频分享平台
+      - name: Bilibili
+        url: https://www.bilibili.com
+        desc: 哔哩哔哩弹幕网
+      - name: Weibo
+        url: https://weibo.com
+        desc: 微博社交媒体
+      - name: Reddit
+        url: https://www.reddit.com
+        desc: 兴趣社区论坛
+  - title: TOOLS
+    links:
+      - name: Notion
+        url: https://www.notion.so
+        desc: 一体化笔记工作区
+      - name: Figma
+        url: https://www.figma.com
+        desc: 在线协作设计工具
+      - name: Excalidraw
+        url: https://excalidraw.com
+        desc: 手绘风格白板
+      - name: TinyPNG
+        url: https://tinypng.com
+        desc: 图片压缩工具
+      - name: Remove.bg
+        url: https://www.remove.bg
+        desc: 一键去除背景
+      - name: IP查询
+        url: https://ip.sb
+        desc: IP 地址查询
+  - title: AI
+    links:
+      - name: ChatGPT
+        url: https://chat.openai.com
+        desc: OpenAI 对话模型
+      - name: Claude
+        url: https://claude.ai
+        desc: Anthropic 助手
+      - name: Gemini
+        url: https://gemini.google.com
+        desc: Google AI 助手
+      - name: Hugging Face
+        url: https://huggingface.co
+        desc: 模型与数据集社区
+
+endspace_theme_primary: '#FBFB46'
