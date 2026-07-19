@@ -57,7 +57,7 @@ const NavCard = ({ link, newTab }) => {
             <img
               src={iconSrc}
               alt={link.name}
-              className="w-6 h-6 object-contain group-hover:invert group-hover:brightness-0 transition-all"
+              className="w-6 h-6 object-contain transition-all"
               referrerPolicy="no-referrer"
               onLoad={() => setIconLoaded(true)}
               onError={handleIconError}
