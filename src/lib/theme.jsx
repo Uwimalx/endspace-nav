@@ -1,6 +1,15 @@
 import { useEffect, useState } from 'react'
 import { siteConfig } from '@/config'
 
+// 根据主题色亮度计算对比色（黑或白），用于在主题色背景上显示文字
+const getContrastColor = (hex) => {
+  const m = hex.replace('#', '').match(/.{1,2}/g)
+  if (!m) return '#000'
+  const [r, g, b] = m.map((x) => parseInt(x, 16))
+  // 感知亮度公式
+  return (0.299 * r + 0.587 * g + 0.114 * b) > 150 ? '#000' : '#fff'
+}
+
 export const ThemeProvider = ({ children }) => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === 'undefined') return false
@@ -48,6 +57,10 @@ export const ThemeProvider = ({ children }) => {
 
     root.style.setProperty('--endspace-accent-yellow', primary)
     root.style.setProperty('--endspace-accent-yellow-dim', `${primary}26`)
+    root.style.setProperty('--endspace-on-accent', getContrastColor(primary))
+    const onAccentRgb = getContrastColor(primary) === '#000' ? '0, 0, 0' : '255, 255, 255'
+    root.style.setProperty('--endspace-on-accent-60', `rgba(${onAccentRgb}, 0.6)`)
+    root.style.setProperty('--endspace-on-accent-70', `rgba(${onAccentRgb}, 0.7)`)
     root.style.setProperty('--endspace-accent-cyan', '#62F0F5')
     root.style.setProperty('--endspace-accent-cyan-dim', 'rgba(98, 240, 245, 0.1)')
 

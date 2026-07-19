@@ -244,7 +244,7 @@ body {
   left: -1px;
   padding: 0.25rem 0.5rem;
   background: var(--endspace-accent-yellow);
-  color: #000;
+  color: var(--endspace-on-accent, #000);
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.7rem;
   font-weight: 700;

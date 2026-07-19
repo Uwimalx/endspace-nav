@@ -48,11 +48,11 @@ const NavCard = ({ link, newTab }) => {
       rel="noopener noreferrer"
       className="nav-card endspace-frame group relative flex flex-col p-4 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-[#FBFB45] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out z-0" />
-      <div className="absolute top-0 left-0 right-0 h-1 bg-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
+      <div className="absolute inset-0 bg-[var(--endspace-accent-yellow)] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out z-0" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-[var(--endspace-on-accent)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20" />
 
       <div className="relative z-10 flex items-start gap-3">
-        <div className="nav-card-icon flex-shrink-0 w-10 h-10 flex items-center justify-center bg-[var(--endspace-bg-secondary)] border border-[var(--endspace-border-base)] group-hover:bg-black group-hover:border-black transition-colors">
+        <div className="nav-card-icon flex-shrink-0 w-10 h-10 flex items-center justify-center bg-[var(--endspace-bg-secondary)] border border-[var(--endspace-border-base)] group-hover:bg-[var(--endspace-on-accent)] group-hover:border-[var(--endspace-on-accent)] transition-colors">
           {showIcon ? (
             <img
               src={iconSrc}
@@ -65,28 +65,28 @@ const NavCard = ({ link, newTab }) => {
           ) : (
             <IconExternalLink
               size={18}
-              className="text-[var(--endspace-text-muted)] group-hover:text-white transition-colors"
+              className="text-[var(--endspace-text-muted)] group-hover:text-[var(--endspace-on-accent)] transition-colors"
             />
           )}
         </div>
 
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-1">
-            <h3 className="nav-card-title text-sm font-bold text-[var(--endspace-text-primary)] group-hover:text-black transition-colors truncate">
+            <h3 className="nav-card-title text-sm font-bold text-[var(--endspace-text-primary)] group-hover:text-[var(--endspace-on-accent)] transition-colors truncate">
               {link.name}
             </h3>
             <IconArrowUpRight
               size={14}
               stroke={2}
-              className="flex-shrink-0 text-[var(--endspace-text-muted)] opacity-0 group-hover:opacity-100 group-hover:text-black -translate-x-1 group-hover:translate-x-0 transition-all"
+              className="flex-shrink-0 text-[var(--endspace-text-muted)] opacity-0 group-hover:opacity-100 group-hover:text-[var(--endspace-on-accent)] -translate-x-1 group-hover:translate-x-0 transition-all"
             />
           </div>
           {link.desc && (
-            <p className="nav-card-desc text-xs text-[var(--endspace-text-muted)] group-hover:text-black/70 transition-colors mt-1 line-clamp-2 leading-relaxed">
+            <p className="nav-card-desc text-xs text-[var(--endspace-text-muted)] group-hover:text-[var(--endspace-on-accent-70)] transition-colors mt-1 line-clamp-2 leading-relaxed">
               {link.desc}
             </p>
           )}
-          <div className="nav-card-host tech-text text-[10px] text-[var(--endspace-text-muted)] group-hover:text-black/60 transition-colors mt-2 truncate">
+          <div className="nav-card-host tech-text text-[10px] text-[var(--endspace-text-muted)] group-hover:text-[var(--endspace-on-accent-60)] transition-colors mt-2 truncate">
             {(() => {
               try {
                 return new URL(link.url).hostname.replace(/^www\./, '')
