@@ -37,7 +37,7 @@ const FloatingControls = ({ toc, ...props }) => {
           aria-label="Scroll To Top"
           title="Scroll To Top"
         >
-          <div className="w-full h-full rounded-full flex items-center justify-center transition-colors duration-200 bg-transparent group-hover:bg-[#FBFB46]">
+          <div className="w-full h-full rounded-full flex items-center justify-center transition-colors duration-200 bg-transparent group-hover:bg-[var(--endspace-accent-yellow)]">
             <div className="relative w-full h-full flex items-center justify-center">
               <span className="text-[10px] font-bold font-mono text-[var(--endspace-text-secondary)] group-hover:hidden">
                 {Math.round(percent)}%
@@ -45,7 +45,7 @@ const FloatingControls = ({ toc, ...props }) => {
               <IconArrowUp
                 size={20}
                 stroke={2}
-                className="text-black hidden group-hover:block"
+                className="text-[var(--endspace-on-accent)] hidden group-hover:block"
               />
             </div>
           </div>
