@@ -353,7 +353,7 @@ export const LoadingCover = () => {
           left: 0;
           width: 100%;
           height: 100%;
-          background: #FBFB46;
+          background: var(--endspace-accent-yellow, #FBFB46);
           transform: scaleX(0);
           transform-origin: left;
           pointer-events: none;
