@@ -57,7 +57,7 @@ const NavCard = ({ link, newTab }) => {
             <img
               src={iconSrc}
               alt={link.name}
-              className="w-6 h-6 object-contain transition-all"
+              className="w-6 h-6 object-contain group-hover:invert group-hover:brightness-0 transition-all"
               referrerPolicy="no-referrer"
               onLoad={() => setIconLoaded(true)}
               onError={handleIconError}
@@ -102,7 +102,6 @@ const NavCard = ({ link, newTab }) => {
 }
 
 export const NavPanel = () => {
-  const enabled = siteConfig('ENDSPACE_NAV_PANEL', true)
   const title = siteConfig('ENDSPACE_NAV_TITLE', 'NAVIGATION')
   const subtitle = siteConfig('ENDSPACE_NAV_SUBTITLE', '')
   const newTab = siteConfig('ENDSPACE_NAV_NEW_TAB', true)
@@ -130,8 +129,6 @@ export const NavPanel = () => {
     () => groups.reduce((n, g) => n + (g.links?.length || 0), 0),
     [groups]
   )
-
-  if (!enabled) return null
 
   return (
     <div className="nav-panel w-full">

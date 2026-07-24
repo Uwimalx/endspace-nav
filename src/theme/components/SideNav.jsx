@@ -38,7 +38,7 @@ export const SideNav = (props) => {
   const emailIcon = useRef(null)
 
   const avatarUrl =
-    props?.siteInfo?.icon || siteInfo?.icon || siteConfig('AVATAR')
+    props?.siteInfo?.icon || siteInfo?.icon || siteConfig('LOGO')
 
   const socialLinks = [
     { key: 'CONTACT_GITHUB', label: 'GitHub' },

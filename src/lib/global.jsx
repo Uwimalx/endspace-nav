@@ -10,7 +10,7 @@ export const GlobalProvider = ({ children }) => {
 
   const siteInfo = {
     title: siteConfig('SITE_NAME', 'Endspace'),
-    icon: siteConfig('AVATAR', '/favicon.svg'),
+    icon: siteConfig('LOGO', '/favicon.svg'),
     description: siteConfig('BIO', '')
   }
 

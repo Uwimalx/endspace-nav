@@ -12,7 +12,7 @@ const LayoutBase = ({ children }) => {
 
   useViewportScale()
 
-  const LOADING_COVER = siteConfig('ENDSPACE_LOADING_COVER', true)
+  const LOADING_COVER = true
 
   useEffect(() => {
     const siteName = siteConfig('SITE_NAME', '')

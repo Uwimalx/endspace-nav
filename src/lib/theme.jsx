@@ -17,7 +17,7 @@ export const ThemeProvider = ({ children }) => {
   })
 
   useEffect(() => {
-    const primary = siteConfig('ENDSPACE_THEME_PRIMARY', '#FBFB46')
+    const primary = siteConfig('ENDSPACE_THEME_COLOR', '#FBFB46')
 
     const darkColors = {
       bgBase: '#0f1419',

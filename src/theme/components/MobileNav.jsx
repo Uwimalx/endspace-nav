@@ -6,7 +6,7 @@ export const MobileNav = (props) => {
   const { siteInfo } = useGlobal()
 
   const avatarUrl =
-    props?.siteInfo?.icon || siteInfo?.icon || siteConfig('AVATAR')
+    props?.siteInfo?.icon || siteInfo?.icon || siteConfig('LOGO')
 
   return (
     <>

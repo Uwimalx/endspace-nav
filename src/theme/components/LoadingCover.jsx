@@ -22,12 +22,12 @@ export const LoadingCover = () => {
   const bgPlayingRef = useRef(false)
 
   const siteName = siteConfig('ENDSPACE_LOADING_SITE_NAME', 'CLOUD09_NAV')
-  const textInit = siteConfig('ENDSPACE_LOADING_TEXT_INIT', 'INITIALIZING')
-  const textLoading = siteConfig('ENDSPACE_LOADING_TEXT_LOADING', 'LOADING')
-  const textComplete = siteConfig('ENDSPACE_LOADING_TEXT_COMPLETE', 'READY')
-  const textSweeping = siteConfig('ENDSPACE_LOADING_TEXT_SWEEPING', 'LAUNCHING')
-  const textFadeout = siteConfig('ENDSPACE_LOADING_TEXT_FADEOUT', 'WELCOME')
-  const loadingImage = siteConfig('ENDSPACE_LOADING_IMAGE', '')
+  const textInit = 'INITIALIZING'
+  const textLoading = 'LOADING'
+  const textComplete = 'READY'
+  const textSweeping = 'LAUNCHING'
+  const textFadeout = 'WELCOME'
+  const loadingImage = siteConfig('LOGO', '')
 
   const playEnterThenBg = () => {
     if (!bgmOnRef.current || enterPlayedRef.current) return

@@ -6,7 +6,7 @@ export const TitleBar = ({ post }) => {
   const marqueeText = siteConfig('ENDSPACE_BANNER_WATERMARK_TEXT', 'CLOUD09_NAV')
   const siteName = siteConfig('SITE_NAME', 'CLOUD09_NAV')
   const siteBio = siteConfig('BIO', 'Navigation Terminal')
-  const avatar = siteConfig('AVATAR', '/favicon.svg')
+  const avatar = siteConfig('LOGO', '/favicon.svg')
 
   const [bgmOn, setBgmOn] = useState(true)
 

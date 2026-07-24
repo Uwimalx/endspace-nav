@@ -1,23 +1,18 @@
+# 站点基本信息
 site_name: ENDSPACE_NAV
 author: UWIMALX
 bio: Navigation Terminal
-avatar: /favicon.svg
+logo: /favicon.svg
 since: 2026
 bei_an: ''
 bei_an_link: ''
 
-endspace_loading_cover: true
-endspace_loading_site_name: ENDSPACE_NAV
-endspace_loading_text_init: INITIALIZING
-endspace_loading_text_loading: LOADING
-endspace_loading_text_complete: READY
-endspace_loading_text_sweeping: LAUNCHING
-endspace_loading_text_fadeout: WELCOME
-endspace_loading_image: /favicon.svg
-
+# 主题配置
+endspace_theme_color: '#FBFB46'
 endspace_banner_watermark_text: ENDSPACE_NAV
+endspace_loading_site_name: ENDSPACE_NAV
 
-endspace_nav_panel: true
+# 导航配置
 endspace_nav_title: ENDSPACE_NAV
 endspace_nav_subtitle: 'NAVIGATION_TERMINAL // INDEX_OF_LINKS'
 endspace_nav_new_tab: true
@@ -107,5 +102,3 @@ endspace_nav_groups:
       - name: Hugging Face
         url: https://huggingface.co
         desc: 模型与数据集社区
-
-endspace_theme_primary: '#FBFB46'
